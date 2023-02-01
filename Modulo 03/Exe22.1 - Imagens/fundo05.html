@@ -8,12 +8,23 @@
     <style>
         /* Não use um Background na cor branca caso deseja utilizar imagensa de fundo */
 
+        /* Shorthand - background 
+        color > image > position > repeat > size? > attachement*/
+
         body {
+            height: 100vh;
+            /*
             background-color: cornflowerblue;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
-            background-size: cover; /* <-- Ocupa 100% da View port */ 
+            background-size: cover; || <-- Ocupa 100% da View port 
+            background-attachment: scroll; || <-- Fundo automatizado 
+            */ 
+        
+            background: cornflowerblue url('imagens/wallpaper002.jpg') center center
+            no-repeat scroll;
+            background-size: cover;
         }
 
         h1 {
