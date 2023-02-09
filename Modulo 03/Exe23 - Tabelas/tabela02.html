@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1.5px solid gray;
+            padding: 2px;
+        }
+
+        .tdNum {
+            text-align: right;
+        }
+
+        .tdAno {
+            text-align: center;
+        }
+
+        thead tr {
+            background-color: steelblue;
+            color: rgb(9, 37, 59);
+        }
+
+        tfoot {
+            font-weight: 600;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>O uso de uma tabela grande</h1>
+    <!-- ANATOMIA DE TABELAS GRANDES
+
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY 
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH  
+    -->
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+                <th>Ano</th>
+                <th>Fonte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="tdNum">12,33 milhões</td>
+                <td class="tdAno">2020</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="tdNum">20,87 milhões</td>
+                <td class="tdAno">2015</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="tdNum">6,748 milhões</td>
+                <td class="tdAno">2020</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="tdNum">15,13 milhões</td>
+                <td class="tdAno">2014</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="tdNum">3,874 milhões</td>
+                <td class="tdAno">2014</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="tdNum">3,885 milhões</td>
+                <td class="tdAno">2014</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="tdNum">496.936 mil</td>
+                <td class="tdAno">2014</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="tdNum">3,224 milhões</td>
+                <td class="tdAno">2014</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="tdNum">2,22 milhões</td>
+                <td class="tdAno">2014</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="tdNum">2,62 milhões</td>
+                <td class="tdAno">2014</td>
+                <td>Google</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td class="tdNum">71,367 milhões...</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
